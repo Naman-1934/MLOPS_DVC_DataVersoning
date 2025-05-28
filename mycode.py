@@ -14,6 +14,9 @@ df = pd.DataFrame(data)
 new_row_loc = {'Name': 'GF1', 'Age': 22, 'City': 'Delhi'}
 df.loc[len(df.index)] = new_row_loc
 
+new_row_loc2 = {'Name': 'GF2', 'Age': 23, 'City': 'Mumbai'}
+df.loc[len(df.index)] = new_row_loc2
+
 
 # This is ensures that root direcctory exists at the root levels.
 data_dir = 'data'
