@@ -10,6 +10,10 @@ data = {'Name': ['Alice', 'Bob', 'Charlis'],
 
 df = pd.DataFrame(data)
 
+# Add a new row to df for v2
+new_row_loc = {'Name': 'GF1', 'Age': 22, 'City': 'Delhi'}
+df.loc[len(df.index)] = new_row_loc
+
 
 # This is ensures that root direcctory exists at the root levels.
 data_dir = 'data'
